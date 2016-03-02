@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the featured of the site/application.
+// -----------------------------------------------------------------------------
+
+.featured {
+  h2{
+    text-align: center;
+    color: white;
+  }
+  @include e("card"){
+    border: 1px solid red;
+    height: 150px;
+    lost-column: 1/2;
+    lost-column-gutter: 0;
+    img{
+      @include nested-img();
+    }
+
+  }
+}

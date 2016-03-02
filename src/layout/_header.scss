@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.wrapper {
+  lost-flex-container: column;
+}
+.nav{
+  height: 100px;
+  @include flex-container(space-around, center);
+  @include e("toggle"){
+  }
+  @include e("logo"){
+    img{
+      @include nested-img();
+    }
+
+  }
+}
